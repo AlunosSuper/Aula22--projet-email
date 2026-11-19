@@ -12,8 +12,21 @@
             <input type="text" name="titulo" placeholder="Título"/>
             <textarea type="text" name="corpo" placeholder="Corpo..." rows="2">
             </textarea>
-            <button> Pronto! </button>
+            <button onclick="ObterEmail()"> Pronto! </button>
         </div>
+    <script>
+        const entradaDestino = document.querySelector("[name=destino]")
+        const entradaTitulo = document.querySelector("[name=titulo]")
+        const entradaCorpo = document.querySelector("[name=corpo]")
+            
+        function ObterEmail() {
+            const destino = entradaDestino.value
+            const titulo = entradaTitulo.value
+            const corpo = entradaCorpo.value
+            electron.EnviarEmail({ destino, titulo, corpo })
+            }
 
+        </script>
+    
     </body>
 </html>

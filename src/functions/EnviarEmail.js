@@ -7,7 +7,7 @@ function EnviarEmail(evento, resultados) {
     service: "gmail",
     auth: {
         user: "alunossupergeeksjoinville@gmail.com",
-        pass: "Alunos123"
+        pass: "bibe nruu qntf ddxy"
     }
     })
 
